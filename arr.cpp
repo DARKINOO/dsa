@@ -18,21 +18,21 @@ int main(){
     cout << endl;
     
    // array input lene ke liye
+   int n;
+   cout << "enter length of arr: " ;
+   cin >> n ;  // size ko input lere
+   int iarr[n];  //dynamically array ko runtime pr generate krwa rhe hai 
 
-   int iarr[5] = {};
-   int l = sizeof(iarr)/ sizeof(int);
-
-   for (int i = 0; i < l; i++)
+   for (int i = 0; i < n; i++)
    {
     cin >> iarr[i];
    }
    
-    for (int i = 0; i < l; i++) // arr ko print krane ke liye
+    for (int i = 0; i < n; i++) // arr ko print krane ke liye
     {
         cout << iarr[i] << " ";
     }
     cout << endl;
-
 
     return 0;
 }
