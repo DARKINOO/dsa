@@ -6,7 +6,7 @@ int main(){
    int n;
    cout << "enter length of arr: " ;
    cin >> n ;  // size ko input lere
-   int arr[n];  //dynamically array ko runtime pr generate krwa rhe hai 
+   int arr[10000];  //dynamically array ko runtime pr generate krwa rhe hai 
 
    for (int i = 0; i < n; i++)
    {
