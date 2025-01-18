@@ -1,4 +1,4 @@
-// bubble sort ek aisa algorithm hai 
+// bubble sort ek aisa algorithm hai jo adjacent elements ko compare karke sort karta hai.
 #include <iostream>
 using namespace std;
 
@@ -9,7 +9,7 @@ void bubbleSort(int arr[], int n) {
         // Loop to compare array elements
         for (int j = 0; j < n - i - 1; j++) {
             // Agar current element next element se bada hai to swap karo
-            if (arr[j] > arr[j + 1]) {
+            if (arr[j] > arr[j + 1]) { //decending order ke liye < sign use karo 
                 // Swap karne ka code
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
@@ -35,3 +35,5 @@ int main() {
     printArray(arr, n);
     return 0;
 }
+
+// Time complexity: O(n^2)
